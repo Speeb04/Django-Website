@@ -5,4 +5,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Hello, world! Your Django site is running.")
+    return render(request, 'home.html', {'title': 'Speebsite'})
